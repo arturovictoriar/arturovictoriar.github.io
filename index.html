@@ -1,18 +1,657 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Arturo Victoria Rincon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="./utils/styles/bootstrap.min.css" />
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300"
+    />
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="./utils/styles/owl.carousel.css" />
+    <link rel="stylesheet" href="./utils/styles/owl.theme.default.css" />
+    <!-- animate.css-->
+    <link rel="stylesheet" href="./utils/styles/animate.css" />
+    <!-- theme stylesheet-->
+    <link
+      rel="stylesheet"
+      href="./utils/styles/style.default.css"
+      id="theme-stylesheet"
+    />
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="./utils/styles/custom.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="./utils/images/icon/logo_bigger_2x_tr.png" />
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="#intro" class="navbar-brand scrollTo"
+            >Arturo Victoria Rincon</a
+          >
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarcollapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#intro" class="nav-link link-scroll">Intro</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link link-scroll">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link link-scroll">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#references" class="nav-link link-scroll">My work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link link-scroll">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section
+      id="intro"
+      style="
+        background: url(./utils/images/cover/HomeHD8.png) center center no-repeat;
+        background-size: cover;
+      "
+      class="intro-section pb-2"
+    ></section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6 content_space">
+            <p class="text-justify">
+              I am a Mechatronics Engineer with 2+ years of experience in STEM
+              projects in fields of knowledge such as Nanotechnology,
+              Electronics, Web Development, Embedded Systems, and Machine
+              Learning.
+            </p>
+            <p class="text-justify">
+              My passion for Artificial Intelligence has made me develop some
+              projects like licensing plate identification, music creation, or
+              mood speech identification using K-Nearest Neighbor, Convolutional
+              Neural Networks, and Recurrent Neural Networks algorithms.
+            </p>
+            <p class="text-justify">
+              Currently, I am interested on creating users models which can
+              generate valuable information from social media using Artificial
+              Intelligence.
+            </p>
+            <!--Tech skill-->
+            <div data-animate="fadeInDown" class="text-center text-justify">
+              <div class="container">
+                <header class="text-center">
+                  <h2 data-animate="fadeInDown" class="title tech_title">
+                    Technical Skills
+                  </h2>
+                </header>
+                <div class="row justify-content-center" data-animate="fadeInUp">
+                  <p class="mr-3 icon_size" title="Python">
+                    <i class="fab fa-python"></i>
+                  </p>
 
-<body>
+                  <p class="mr-3 icon_size" title="C">
+                    <i class="fas fa-copyright"></i>
+                  </p>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+                  <p class="mr-3 icon_size" title="Node.js">
+                    <i class="fab fa-node-js"></i>
+                  </p>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+                  <p class="mr-3 icon_size" title="MySQL | MongoDB">
+                    <i class="fas fa-database"></i>
+                  </p>
 
-</body>
+                  <p class="mr-3 icon_size" title="Git">
+                    <i class="fab fa-git-square"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="AWS">
+                    <i class="fab fa-aws"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="Docker">
+                    <i class="fab fa-docker"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="React.js">
+                    <i class="fab fa-react"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="Raspberry">
+                    <i class="fab fa-raspberry-pi"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Tech skill-->
+          </div>
+          <div data-animate="fadeInUp" class="col-sm-5 mx-auto mt-0">
+            <img
+              src="./utils/images/me/me_pro.jpg"
+              alt="Arturo Victoria Rincon"
+              class="image rounded-circle img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service-->
+    <section id="services" class="bg-gradient services-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title title_services">
+            Services
+          </h2>
+        </header>
+        <div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fab fa-html5"></i></div>
+            <h3 class="heading mb-3 text-400">Web Development</h3>
+            <p class="text-left description">
+              You would like to have the best web site with payment ingrates, or
+              create a social media? I can develop it for you with the best
+              technologies like Javascript, Python, AWS, and React.
+            </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-robot"></i></div>
+            <h3 class="heading mb-3 text-400">Machine Learning</h3>
+            <p class="text-left description">
+              Not sure what is the best way to sell your products and services
+              to your customers? The data compiled from social media and the
+              help of machine learning can help to increase your profit.
+            </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fas fa-microchip"></i></div>
+            <h3 class="heading mb-3 text-400">Internet of Things</h3>
+            <p class="text-left description">
+              Craved to have a futuristic home or just measure and to control
+              the weather of your crops? I can help you to integrate high
+              technology for making your life easier.
+            </p>
+          </div>
+        </div>
+
+        <hr data-animate="fadeInUp" />
+        <div data-animate="fadeInUp" class="text-center">
+          <p class="lead contact_m">
+            Let's talk!, we can create magical things together!
+          </p>
+          <p>
+            <a
+              href="#contact"
+              class="btn btn-outline-light link-scroll button_contact_me"
+              >Contact me</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- My Work -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work</h2>
+            <p data-animate="fadeInUp" class="lead">
+              As Mechatronic Engineer I have worked on a lot of projects so look
+              at my latest ones!
+            </p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="Nanotechnology">Nanotechnology</a></li>
+            <li>
+              <a href="#" data-filter="Internet of Things"
+                >Internet of Things</a
+              >
+            </li>
+            <li>
+              <a href="#" data-filter="Web Development">Web Development</a>
+            </li>
+            <li>
+              <a href="#" data-filter="Artificial Intelligence"
+                >Artificial Intelligence</a
+              >
+            </li>
+            <li><a href="#" data-filter="Articles">Articles</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+              <div
+                data-category="Internet of Things"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img src="./utils/images/iot/daniel_DOMAS.jpg" alt="" class="img-fluid" />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">DOMAS</h3>
+                        <p>Detection, Orientation, and Movility Aid System</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Internet of Things"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img
+                      src="./utils/images/iot/cut_meo_station_2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">CLI+</h3>
+                        <p>Meteorology Station</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Nanotechnology"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img src="./utils/images/nano/NLP2000_tool.jpg" alt="" class="img-fluid" />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">NLP 2000</h3>
+                        <p>NLP 2000 characterization</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Nanotechnology"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img src="./utils/images/nano/Circuits_hd_2.jpg" alt="" class="img-fluid" />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Micro Circuits</h3>
+                        <p>Using lithography for making micro circuits</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Web Development"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img
+                      src="./utils/images/web/emailscraper_readme_2x_cut.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Email Scrapper</h3>
+                        <p>Contact job candidates through a bot</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>    
+              <div
+                data-category="Web Development"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img
+                      src="./utils/images/web/hbnb.PNG"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">AirBnB Clone</h3>
+                        <p>Vacation Rental</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Articles"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img
+                      src="./utils/images/linux/my_shell.PNG"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Art Shell</h3>
+                        <p>My own shell in linux</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images=""
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      
+                    </p>
+                    <p>
+                      
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-globe"></i> Visit website</a
+                      ><a
+                        href="javascript:void(0);"
+                        class="btn btn-outline-primary"
+                        ><i class="fa fa-download"></i> Download case study</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <footer class="main-footer">
+      <div class="container">
+        <div id="contact">
+          <header class="text-center">
+            <h2 class="title title_contact">Let's talk!</h2>
+          </header>
+          <div class="col-lg-5 col-md-8 mx-auto mt-2">
+            <p class="text-white text-center mb-4 contact_m_footer">
+              I would like to help you achieve your goals, so tell me your
+              problems and let's solve them together.
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icon_space"
+                ><i class="far fa-envelope"></i
+              ></span>
+              <span class="text-white info-icono"
+                >arturo.victoria.rincon@gmail.com</span
+              >
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icono icon_space"
+                ><i class="fas fa-mobile-alt"></i
+              ></span>
+              <span class="text-white info-icono">+57 310 426 7245</span>
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icono icon_space"
+                ><i class="fas fa-map-marker-alt"></i
+              ></span>
+              <span class="text-white info-icono">Cali, CO</span>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center footer_space">
+          <div class="text-center text-lg-center">
+            <p class="social">
+              <a
+                href="https://www.linkedin.com/in/arturovictoriar/"
+                subject="LinkedIn icon"
+                target="_blank"
+                class="external facebook wow fadeInUp"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/arturovictoriar"
+                subject="GitHub icon"
+                target="_blank"
+                data-wow-delay="0.2s"
+                class="external wow fadeInUp github_backg"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/arturovictoriar"
+                subject="Twitter icon"
+                target="_blank"
+                data-wow-delay="0.4s"
+                class="external wow fadeInUp twitter_backg"
+                title="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1DM3zU5kr5M_EEx0ZalWhceDUwtmhaeuU/view?usp=sharing"
+                subject="CV icon"
+                data-wow-delay="0.6s"
+                target="_blank"
+                class="external wow fadeInUp gmail_backg"
+                title="Curriculum Vitae"
+              >
+                <i class="fa fa-briefcase"></i>
+              </a>
+              <a
+                href="mailto:arturo.victoria.rincon@gmail.com?"
+                subject="Email icon"
+                data-wow-delay="0.6s"
+                target="_blank"
+                class="external email wow fadeInUp"
+                title="Email"
+              >
+                <i class="fa fa-envelope"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="text-center text-lg-center mt-4 mt-lg-4">
+          <p>© 2020 Arturo Victoria Rincon. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="./utils/scripts/jquery.min.js"></script>
+    <script src="./utils/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./utils/scripts/jquery.cookie.js"></script>
+    <script src="./utils/scripts/owl.carousel.min.js"></script>
+    <script src="./utils/scripts/jquery.waypoints.min.js"></script>
+    <script src="./utils/scripts/jquery.counterup.js"></script>
+    <script src="./utils/scripts/leaflet.js"></script>
+    <script src="./utils/scripts/front.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
 </html>
