@@ -136,7 +136,7 @@ $(function () {
         }
 
         openReference(sliderContent);
-
+        document.getElementById("detail").scrollIntoView();
     });
 
     function openReference(sliderContent) {
