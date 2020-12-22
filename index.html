@@ -32,8 +32,41 @@
       rel="shortcut icon"
       href="./utils/images/icon/logo_bigger_2x_tr.png"
     />
+    <!--script load page-->
+    <script type="text/javascript" src="./utils/scripts/jquery.js"></script>
+    <script type="text/javascript">
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+        document.getElementsByTagName("html")[0].style.overflow = "auto";
+      })
+      </script>
+      <style>
+      .loader 
+      {
+       position: fixed;
+       left: 0px;
+       top: 0px;
+       width: 100%;
+       height: 100%;
+       z-index: 9999;
+       background: url('./utils/images/other/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+      }
+      .initial_color {
+        margin-top: 20%;
+        color: #4fbfa8;
+      }
+      </style>
+    <!--end script load page-->
   </head>
   <body>
+    <!-- load logo-->
+    <div class="loader">
+      <div class="container text-center">
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5 initial_color">Hola, hello, नमस्ते!</h1>
+      </div>
+    </div>
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
@@ -100,9 +133,9 @@
             </p>
             <p class="text-justify">
               My passion for Artificial Intelligence has made me develop some
-              projects like object identification, music creation, or
-              mood speech identification using Convolutional
-              Neural Networks, and Recurrent Neural Networks algorithms.
+              projects like object identification, music creation, or mood
+              speech identification using Convolutional Neural Networks, and
+              Recurrent Neural Networks algorithms.
             </p>
             <p class="text-justify">
               Currently, I am interested on creating users models which can
@@ -283,15 +316,31 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/iot/daniel_DOMAS.jpg" class="sr-only reference-description">
-                    <p class="text-justify">DOMAS is a device that helps blind people to feel the shapes and the position of a certain
-                      object in front of them. This is an alternative to the walking stick.</p>
-                    <p class="text-justify">DOMAS encodes shapes, figures, and positions, in real-time, of objects shown by means of a
-                      video camera and decodes them in the form of vibration, by means of an array of micromotors.</p>
-                    <p class="text-justify">I was in charge of the programming and electronic design of the device using Python, C ++,
-                      and Proteus.</p>
-                    <p class="text-justify">You can find more information about this project in the following PDF link on page 128,
-                      Chapter 9: "2D object shape and position identification wizard for visually impaired people".</p>
+                  <div
+                    data-images="./utils/images/iot/daniel_DOMAS.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      DOMAS is a device that helps blind people to feel the
+                      shapes and the position of a certain object in front of
+                      them. This is an alternative to the walking stick.
+                    </p>
+                    <p class="text-justify">
+                      DOMAS encodes shapes, figures, and positions, in
+                      real-time, of objects shown by means of a video camera and
+                      decodes them in the form of vibration, by means of an
+                      array of micromotors.
+                    </p>
+                    <p class="text-justify">
+                      I was in charge of the programming and electronic design
+                      of the device using Python, C ++, and Proteus.
+                    </p>
+                    <p class="text-justify">
+                      You can find more information about this project in the
+                      following PDF link on page 128, Chapter 9: "2D object
+                      shape and position identification wizard for visually
+                      impaired people".
+                    </p>
                     <p class="text-justify">ISBN: 978-958-52097-0-1</p>
                     <p class="buttons text-center">
                       <a
@@ -305,12 +354,13 @@
                     </p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3">
                       <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/jQVbOkof8wA"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/jQVbOkof8wA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
                     </div>
                   </div>
                 </div>
@@ -333,19 +383,31 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/iot/Optimized-cut_meo_station_2.jpg" class="sr-only reference-description">
-                    <p class="text-justify">CLI+ device monitors the weather in Roldanillo's paragliding ditchs.</p>
-                    <p class="text-justify">The device sends the weather data to an API using C++ and GMS.</p>
-                    <p class="text-justify">I was in charge of developing the service which send the data
-                      from CLI+ to an API using C++.</p>
+                  <div
+                    data-images="./utils/images/iot/Optimized-cut_meo_station_2.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      CLI+ device monitors the weather in Roldanillo's
+                      paragliding ditchs.
+                    </p>
+                    <p class="text-justify">
+                      The device sends the weather data to an API using C++ and
+                      GMS.
+                    </p>
+                    <p class="text-justify">
+                      I was in charge of developing the service which send the
+                      data from CLI+ to an API using C++.
+                    </p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3">
                       <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/NJ7dp5qg_5M"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/NJ7dp5qg_5M"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
                     </div>
                   </div>
                 </div>
@@ -368,16 +430,27 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/nano/Optimized-NLP2000_tool.jpg" class="sr-only reference-description">
-                    <p class="text-justify">I participated in the "Study and application of the NLP2000 through
-                      the student guide of the Nanoprofesor laboratory" research for the modification and development
-                      of emerging technologies such as sensors, identification of inks, solutions, ink wells,
-                      substrates, tips and configuration, and software management ID 6142 in the Biotechnology and
-                      Nanotechnology area at TecnoParque.</p>
-                    <p class="text-justify">I was in charge of the characterization and application of the NLP2000
-                      equipment at TecnoParque.</p>
-                    <p class="text-justify">It was concluded that the lithography scanning method is feasible to make
-                      microcircuits.</p>
+                  <div
+                    data-images="./utils/images/nano/Optimized-NLP2000_tool.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      I participated in the "Study and application of the
+                      NLP2000 through the student guide of the Nanoprofesor
+                      laboratory" research for the modification and development
+                      of emerging technologies such as sensors, identification
+                      of inks, solutions, ink wells, substrates, tips and
+                      configuration, and software management ID 6142 in the
+                      Biotechnology and Nanotechnology area at TecnoParque.
+                    </p>
+                    <p class="text-justify">
+                      I was in charge of the characterization and application of
+                      the NLP2000 equipment at TecnoParque.
+                    </p>
+                    <p class="text-justify">
+                      It was concluded that the lithography scanning method is
+                      feasible to make microcircuits.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -399,14 +472,23 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/nano/Circuits_hd_2.jpg" class="sr-only reference-description">
-                    <p class="text-justify">I participated in the "Scanning lithography as a technique for the
-                      creation of microsensors prototypes" research in the Biotechnology and Nanotechnology area
-                      of TecnoParque.</p>
-                    <p class="text-justify">I was in charge of setting up the best lithography designs and
-                      techniques for use in NLP 2000.</p>
-                    <p class="text-justify">It was concluded that to create a functional sensor, organic inks
-                      are needed for detection.</p>
+                  <div
+                    data-images="./utils/images/nano/Circuits_hd_2.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      I participated in the "Scanning lithography as a technique
+                      for the creation of microsensors prototypes" research in
+                      the Biotechnology and Nanotechnology area of TecnoParque.
+                    </p>
+                    <p class="text-justify">
+                      I was in charge of setting up the best lithography designs
+                      and techniques for use in NLP 2000.
+                    </p>
+                    <p class="text-justify">
+                      It was concluded that to create a functional sensor,
+                      organic inks are needed for detection.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -428,31 +510,44 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/web/Optimized-emailscraper_readme_2x_cut.png" class="sr-only reference-description">
-                    <p class="text-justify">I participated in EmailScrapper service development that helps Torre's recruiters to contact
-                      talents through a bot. We used Nodejs, AWS, MySQL, Docker, Express, and React.</p>
-                    <p class="text-justify">I was in charge of the backend of the service. Here I had to program the Bot actions
-                      which were: get the talents' information from the given job board who apply to the Torre
-                      jobs, contact the talents via email, and show some stats of the talents to Torre's recruiters.</p>
-                    <p class="text-justify">Microservices architecture was used in this project.</p>
+                  <div
+                    data-images="./utils/images/web/Optimized-emailscraper_readme_2x_cut.png"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      I participated in EmailScrapper service development that
+                      helps Torre's recruiters to contact talents through a bot.
+                      We used Nodejs, AWS, MySQL, Docker, Express, and React.
+                    </p>
+                    <p class="text-justify">
+                      I was in charge of the backend of the service. Here I had
+                      to program the Bot actions which were: get the talents'
+                      information from the given job board who apply to the
+                      Torre jobs, contact the talents via email, and show some
+                      stats of the talents to Torre's recruiters.
+                    </p>
+                    <p class="text-justify">
+                      Microservices architecture was used in this project.
+                    </p>
                     <p class="buttons text-center">
                       <a
-                      href="https://github.com/arturovictoriar/job_email_scrapper"
-                      class="btn btn-outline-primary"
-                      subject="Email Scrapper implementation"
-                      target="_blank"
-                      title="Email Scrapper"
+                        href="https://github.com/arturovictoriar/job_email_scrapper"
+                        class="btn btn-outline-primary"
+                        subject="Email Scrapper implementation"
+                        target="_blank"
+                        title="Email Scrapper"
                         ><i class="fab fa-github mr-1"></i>GitHub</a
                       >
                     </p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3">
                       <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/FoQe3cGh-aQ"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/FoQe3cGh-aQ"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
                     </div>
                   </div>
                 </div>
@@ -464,7 +559,7 @@
                 <div class="reference">
                   <a href="#"
                     ><img
-                      src="./utils/images/machine/6.jpeg"
+                      src="./utils/images/machine/number_identification.png"
                       alt=""
                       class="img-fluid"
                     />
@@ -477,12 +572,17 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/machine/6.jpeg" class="sr-only reference-description">
-                    <p class="text-justify">Numbers Recognition API is a Machine Learning service that digitalize
-                      numbers printed in an image.
+                  <div
+                    data-images="./utils/images/machine/number_identification.png"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      Numbers Recognition API is a Machine Learning service that
+                      digitalize numbers printed in an image.
                     </p>
-                    <p class="text-justify">I developed this service using some Python frameworks like Flask,
-                      Keras, and TensorFlow.
+                    <p class="text-justify">
+                      I developed this service using some Python frameworks like
+                      Flask, Keras, and TensorFlow.
                     </p>
                     <p class="buttons text-center">
                       <a
@@ -515,12 +615,22 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/linux/my_shell.PNG" class="sr-only reference-description">
-                    <p class="text-justify">Art shell is a command-line interpreter that executes commands read from
-                      standard input in Linux. It handles input/output redirections.</p>
-                    <p class="text-justify">Using the Art shell is similar to the sh command line interpreter on
-                      Linux.</p>
-                    <p class="text-justify">100% of this project was created in pair programming.</p>
+                  <div
+                    data-images="./utils/images/linux/my_shell.PNG"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      Art shell is a command-line interpreter that executes
+                      commands read from standard input in Linux. It handles
+                      input/output redirections.
+                    </p>
+                    <p class="text-justify">
+                      Using the Art shell is similar to the sh command line
+                      interpreter on Linux.
+                    </p>
+                    <p class="text-justify">
+                      100% of this project was created in pair programming.
+                    </p>
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/arturovictoriar/shell_v2"
@@ -554,10 +664,18 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/machine/me_yolo_fix.png" class="sr-only reference-description">
-                    <p class="text-justify">Objects identificator is a Machine Learning service which identificate
-                      people, cars, cat, dogs and, etc, using YOLO (You Only Look Once) algorithm.</p>
-                    <p class="text-justify">I developed this service using Keras and TensorFlow.</p>
+                  <div
+                    data-images="./utils/images/machine/me_yolo_fix.png"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      Objects identificator is a Machine Learning service which
+                      identificate people, cars, cat, dogs and, etc, using YOLO
+                      (You Only Look Once) algorithm.
+                    </p>
+                    <p class="text-justify">
+                      I developed this service using Keras and TensorFlow.
+                    </p>
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/arturovictoriar/Machine_Learning/tree/master/Deep_Learning_Specialization/Convolutional_Neural_Networks/Week_12/Car_detection_for_Autonomous_Driving"
@@ -589,11 +707,18 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/machine//Botcon.PNG" class="sr-only reference-description">
-                    <p class="text-justify">Music creator is a Machine Learning service which can create Jazz music
-                      using LSTM (Long Short-Term Memory) algorithm.
+                  <div
+                    data-images="./utils/images/machine//Botcon.PNG"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      Music creator is a Machine Learning service which can
+                      create Jazz music using LSTM (Long Short-Term Memory)
+                      algorithm.
                     </p>
-                    <p class="text-justify">I developed this service using Keras and TensorFlow.</p>
+                    <p class="text-justify">
+                      I developed this service using Keras and TensorFlow.
+                    </p>
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/arturovictoriar/Machine_Learning/tree/master/Deep_Learning_Specialization/Sequence_Models/Week_14/Jazz_improvisation_with_LSTM"
@@ -605,13 +730,14 @@
                       >
                     </p>
                     <div class="embed-responsive embed-responsive-16by9 mt-3">
-                    <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/iGdfkkaT4ME"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/iGdfkkaT4ME"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
                     </div>
                   </div>
                 </div>
@@ -623,7 +749,7 @@
                 <div class="reference">
                   <a href="#"
                     ><img
-                      src="./utils/images/web/hbnb.PNG"
+                      src="./utils/images/web/airbnb_clone.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -634,12 +760,23 @@
                       </div>
                     </div></a
                   >
-                  <div data-images="./utils/images/web/hbnb.PNG" class="sr-only reference-description">
-                    <p class="text-justify">Airbnb Clone is a service, similar to Airbnb, where you can rent accommodations
-                      with the best amenities.</p>
-                    <p class="text-justify">This service was developed with MySQL, Python, Flask, CSS, HTML, Jinja2, and Nginx</p>
-                    <p class="text-justify">My team and I participated in all the stages of the development (frontend, backend, and 
-                      DevOps) using peer programming.</p>
+                  <div
+                    data-images="./utils/images/web/airbnb_clone.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify">
+                      Airbnb Clone is a service, similar to Airbnb, where you
+                      can rent accommodations with the best amenities.
+                    </p>
+                    <p class="text-justify">
+                      This service was developed with MySQL, Python, Flask, CSS,
+                      HTML, Jinja2, and Nginx
+                    </p>
+                    <p class="text-justify">
+                      My team and I participated in all the stages of the
+                      development (frontend, backend, and DevOps) using peer
+                      programming.
+                    </p>
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/arturovictoriar/AirBnB_clone_v4"
@@ -647,6 +784,42 @@
                         subject="Email Scrapper implementation"
                         target="_blank"
                         title="Email Scrapper"
+                        ><i class="fab fa-github mr-1"></i>GitHub</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-category="Others"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img
+                      src="./utils/images/other/blur-gaussian.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Gaussian Blur</h3>
+                        <p>Blur an image using multithreading.</p>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images="./utils/images/other/blur-gaussian.png"
+                    class="sr-only reference-description"
+                  >
+                    <p class="text-justify"></p>
+                    <p class="buttons text-center">
+                      <a
+                        href="https://github.com/arturovictoriar/holbertonschool-system_linux/tree/master/0x0A-multithreading"
+                        class="btn btn-outline-primary"
+                        subject="Gaussian Blur"
+                        target="_blank"
+                        title="Gaussian Blur"
                         ><i class="fab fa-github mr-1"></i>GitHub</a
                       >
                     </p>
@@ -753,6 +926,7 @@
       </div>
     </footer>
     <!-- JavaScript files-->
+
     <script src="./utils/scripts/jquery.min.js"></script>
     <script src="./utils/scripts/bootstrap.bundle.min.js"></script>
     <script src="./utils/scripts/jquery.cookie.js"></script>

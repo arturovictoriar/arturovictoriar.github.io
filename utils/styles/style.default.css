@@ -4,7 +4,7 @@
 .animated {
   visibility: visible;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 body {
   color: #555;
