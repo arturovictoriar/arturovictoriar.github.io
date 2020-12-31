@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
+    <!-- Loading Page CSS-->
+    <link rel="stylesheet" href="./utils/styles/loading_page.css" />
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="./utils/styles/bootstrap.min.css" />
     <!-- Google fonts - Roboto + Roboto Slab-->
@@ -31,38 +33,13 @@
     <link rel="shortcut icon" href="./utils/images/icon/logo.png" />
     <!--script load page-->
     <script type="text/javascript" src="./utils/scripts/jquery.js"></script>
-    <script type="text/javascript">
-      document.getElementsByTagName("html")[0].style.overflow = "hidden";
-
-      $(window).load(function () {
-        $(".loader").fadeOut("slow");
-        document.getElementsByTagName("html")[0].style.overflow = "auto";
-      });
-    </script>
-    <style>
-      .loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: rgb(0, 0, 0);
-      }
-      .initial_color {
-        color: #4fbfa8;
-      }
-      .resize_logo {
-        width: auto;
-        height: auto;
-      }
-    </style>
+    <script type="text/javascript" src="./utils/scripts/loading_page.js"></script>
     <!--end script load page-->
   </head>
   <body>
     <!-- load logo-->
     <div class="loader">
-      <div class="container text-center">
+      <div class="text-center">
         <img
           src="./utils/images/icon/logo.png"
           alt=""
