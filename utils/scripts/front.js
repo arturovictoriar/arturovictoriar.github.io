@@ -86,9 +86,25 @@ $(function () {
     $('.reference a').on('click', function (e) {
 
         e.preventDefault();
-
+        const youtubeVideosArticles = {
+            "DOMAS": "https://www.youtube.com/embed/jQVbOkof8wA",
+            "CLI+": "https://www.youtube.com/embed/NJ7dp5qg_5M",
+            "Email Scrapper": "https://www.youtube.com/embed/FoQe3cGh-aQ",
+            "Jazz composer": "https://www.youtube.com/embed/83wrPBF4N4w"
+        };
         var title = $(this).find('.reference-title').text(),
             description = $(this).siblings('.reference-description').html();
+
+        if(title in youtubeVideosArticles) {
+            description += `<div class="embed-responsive embed-responsive-16by9 mt-3">
+            <iframe
+            src="${youtubeVideosArticles[title]}"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          </div>`
+        }
 
         $('#detail-title').text(title);
         $('#detail-content').html(description);
