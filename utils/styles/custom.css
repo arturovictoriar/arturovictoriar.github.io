@@ -54,3 +54,13 @@
 .contact_m_footer {
   font-size: 1.1rem !important;
 }
+
+.img_setting {
+  max-width: 600px;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
