@@ -193,4 +193,6 @@ $(function () {
         $(this).removeClass($(this).data('animate-hover'));
     });
 
+    var currentYear = new Date().getFullYear();
+    $('#arturo_reserved').html(`© ${currentYear} Arturo Victoria Rincon. All rights reserved.`)
 });
