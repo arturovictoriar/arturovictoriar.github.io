@@ -12,8 +12,6 @@
     <meta property="og:image" content="https://arturovictoriar.github.io/utils/images/cover/Optimized-HomeHD8.png" />
     <meta property='og:description' content='Check out my latest projects!'/>
     <meta property='og:url' content='https://arturovictoriar.github.io'/>
-    <!-- Loading Page CSS-->
-    <link rel="stylesheet" href="./utils/styles/loading_page.css" />
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="./utils/styles/bootstrap.min.css" />
     <!-- Google fonts - Roboto + Roboto Slab-->
@@ -36,40 +34,26 @@
     <link rel="stylesheet" href="./utils/styles/custom.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="./utils/images/icon/logo.png" />
+    <!-- FA-->
+    <link rel="stylesheet" href="./utils/vendor/fontawesome-free-6.7.2-web/css/all.css" />
     <!--script load page-->
     <script type="text/javascript" src="./utils/scripts/jquery.js"></script>
-    <script type="text/javascript" src="./utils/scripts/loading_page.js"></script>
+    <script src="./utils/scripts/jquery.min.js"></script>
+    <script src="./utils/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./utils/scripts/jquery.cookie.js"></script>
+    <script src="./utils/scripts/owl.carousel.min.js"></script>
+    <script src="./utils/scripts/jquery.waypoints.min.js"></script>
+    <script src="./utils/scripts/jquery.counterup.js"></script>
+    <script src="./utils/scripts/front.js"></script>
     <!--google adsense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3252212769728017" crossorigin="anonymous"></script>
-    <!--end script load page-->
   </head>
   <body>
-    <!-- load logo-->
-    <div class="loader">
-      <div class="f_loading">
-        <div class="text-center">
-          <img
-            src="./utils/images/icon/logo.png"
-            alt=""
-            class="resize_logo mt-2"
-          />
-          <br>
-          <h1 class="initial_color mt-3">
-            Hola, hello, नमस्ते!
-          </h1>
-          <img
-            src="./utils/images/other/loader.gif"
-            alt=""
-            class="resize_logo m_gif"
-          />
-        </div>
-      </div>
-    </div>
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a href="#intro" class="navbar-brand link-scroll scrollTo"
+          <a href="#about" class="navbar-brand link-scroll scrollTo"
             >Arturo Victoria Rincon</a
           >
           <button
@@ -85,9 +69,6 @@
           </button>
           <div id="navbarcollapse" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="#intro" class="nav-link link-scroll">Intro</a>
-              </li>
               <li class="nav-item">
                 <a href="#about" class="nav-link link-scroll">About</a>
               </li>
@@ -105,24 +86,14 @@
         </div>
       </nav>
     </header>
-    <!-- Intro Image-->
-    <section
-      id="intro"
-      style="
-        background: url(./utils/images/cover/Optimized-HomeHD8.png) center
-          center no-repeat;
-        background-size: cover;
-      "
-      class="intro-section pb-2"
-    ></section>
     <!-- About-->
     <section id="about" class="about-section">
       <div class="container">
         <header class="text-center">
           <h2 class="title">About me</h2>
         </header>
-        <div class="row" style="align-items: center;">
-          <div class="col-lg-6 content_space">
+        <div class="row " style="align-items: center;">
+          <div class="col-lg-5 content_space">
             <p class="text-justify">
               I'm a Fullstack Software Engineer specialized in Web development and Data processing.
             </p>
@@ -143,35 +114,33 @@
                   <p class="mr-3 icon_size" title="Python">
                     <i class="fab fa-python"></i>
                   </p>
-
+                  <p class="mr-3 icon_size" title="Php">
+                    <i class="fa-brands fa-php"></i>
+                  </p>
                   <p class="mr-3 icon_size" title="C">
                     <i class="fas fa-copyright"></i>
                   </p>
-
                   <p class="mr-3 icon_size" title="Node.js">
                     <i class="fab fa-node-js"></i>
                   </p>
-
-                  <p class="mr-3 icon_size" title="MySQL | MongoDB">
+                  <p class="mr-3 icon_size" title="MySQL | Postgres | Redis | MongoDB">
                     <i class="fas fa-database"></i>
                   </p>
-
                   <p class="mr-3 icon_size" title="Git">
                     <i class="fab fa-git-square"></i>
                   </p>
-
                   <p class="mr-3 icon_size" title="AWS">
                     <i class="fab fa-aws"></i>
                   </p>
-
                   <p class="mr-3 icon_size" title="Docker">
                     <i class="fab fa-docker"></i>
                   </p>
-
                   <p class="mr-3 icon_size" title="React.js">
                     <i class="fab fa-react"></i>
                   </p>
-
+                  <p class="mr-3 icon_size" title="vue.js">
+                    <i class="fa-brands fa-vuejs"></i>
+                  </p>
                   <p class="mr-3 icon_size" title="Raspberry">
                     <i class="fab fa-raspberry-pi"></i>
                   </p>
@@ -180,11 +149,12 @@
             </div>
             <!--Tech skill-->
           </div>
-          <div class="col-sm-5 mx-auto mt-0">
+          <div class="col-lg-7 mx-auto mt-0" style="height:25rem; object-fit: cover;">
             <img
-              src="./utils/images/me/Optimized_me_new.jpeg"
+              src="./utils/images/cover/Optimized-HomeHD8.png"
               alt="Arturo Victoria Rincon"
-              class="image rounded-circle img-fluid"
+              class="image rounded img-fluid"
+              style="height:100%;"
             />
           </div>
         </div>
@@ -210,10 +180,10 @@
           </div>
           <div class="col-lg-4">
             <div class="icon"><i class="fa fa-robot"></i></div>
-            <h3 class="heading mb-3 text-400">Machine Learning</h3>
+            <h3 class="heading mb-3 text-400">Artificial Intelligence</h3>
             <p class="text-left description">
               Do you have a lot of information about your customers and your business is
-              stagnant? Machine Learning and I can help you focus your energy and resources
+              stagnant? AI and I can help you focus your energy and resources
               to increase your profits.
             </p>
           </div>
@@ -379,7 +349,12 @@
                       I was in charge of developing the service which stores and sends the data from CLI+ to an API.
                     </p>
                     <p class="text-justify">In the next link, you will be able to find one of the potentials of CLI+:
-                      <a href="https://web.maclic.co/story/el-aguacero-del-26-de-mayo-zgeq">The downpour of May 26</a></p>
+                      <a
+                        href="https://web.maclic.co/story/el-aguacero-del-26-de-mayo-zgeq"
+                        subject="MACLIC story"
+                        target="_blank"
+                        title="DOMAS"
+                      >The downpour of May 26</a></p>
                   </div>
                 </div>
               </div>
@@ -883,14 +858,5 @@
       </div>
     </footer>
     <!-- JavaScript files-->
-
-    <script src="./utils/scripts/jquery.min.js"></script>
-    <script src="./utils/scripts/bootstrap.bundle.min.js"></script>
-    <script src="./utils/scripts/jquery.cookie.js"></script>
-    <script src="./utils/scripts/owl.carousel.min.js"></script>
-    <script src="./utils/scripts/jquery.waypoints.min.js"></script>
-    <script src="./utils/scripts/jquery.counterup.js"></script>
-    <script src="./utils/scripts/front.js"></script>
-    <script src="https://kit.fontawesome.com/a374482f1e.js" crossorigin="anonymous"></script>
   </body>
 </html>
